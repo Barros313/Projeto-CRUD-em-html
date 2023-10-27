@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Recursos Humanos - Cadastro</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <h1>Cadastro de Funcionários</h1>
+            <div id="inputContainer">
+                <input type="text" id="cpfInput" placeholder="Digite o CPF">
+                <input type="text" id="nameInput" placeholder="Digite o nome">
+                <input type="text" id="functionInput" placeholder="Digite a Função">
+                <button id="addButton">Adicionar</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <div id="updateContainer">
+                <input type="text" id="updateCpfInput">
+                <input type="text" id="updateNameInput">
+                <input type="text" id="updateFunctionInput">
+                <button id="updateButton">Atualizar</button>
+                <button id="cancelButton">Cancelar</button>
+            </div>
+        </div>
+        <script src="crud.js"></script>
+    </body>
+</html>
